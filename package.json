@@ -4,6 +4,23 @@
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
+  "homepage": "https://github.com/rahulrajdahal/mnkits#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulrajdahal/mnkits.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rahulrajdahal/mnkits/issues"
+  },
+  "keywords": [
+    "mn-kits",
+    "mnkits",
+    "components",
+    "component library",
+    "component ui",
+    "mn component library",
+    "react component library"
+  ],
   "files": [
     "dist"
   ],
