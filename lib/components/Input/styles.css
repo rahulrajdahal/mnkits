@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.label_input_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+input {
+  border-radius: 0.25rem;
+  outline: none;
+  border: 1px solid rgb(174, 156, 224);
+  padding: 0.5rem 1rem;
+}
+
+.error {
+  color: rgb(218, 63, 63);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.015rem;
+  margin-top: 0.25rem;
+}
