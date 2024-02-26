@@ -8,10 +8,7 @@ export default function Button({ children, ...props }: Readonly<IButton>) {
   const { className, ...restProps } = props;
 
   return (
-    <button
-      className={`text-white bg-green-500 rounded-xl p-3 ${className} `}
-      {...restProps}
-    >
+    <button className={`container ${className} `} {...restProps}>
       {children}
     </button>
   );

@@ -1,0 +1,37 @@
+:root {
+  --text-gray-400: #596981;
+  --text-gray-900: #111625;
+}
+
+.card__button {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 2px;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.card__author {
+  margin-top: 4px;
+  color: var(--text-gray-400);
+  font-size: 13px;
+  font-style: italic;
+  line-height: 18px;
+}
+.card__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--text-gray-900);
+}
+.card__container {
+  padding: 20px 28px;
+  max-width: 17.5rem;
+  border-radius: 20px;
+}
+.card__img {
+  width: 100%;
+  height: 18.75rem;
+  border-radius: 0.75rem;
+}

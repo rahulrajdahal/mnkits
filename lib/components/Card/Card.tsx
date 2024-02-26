@@ -2,6 +2,7 @@ import { Cart } from "meistericons-react";
 
 import { AllHTMLAttributes, ImgHTMLAttributes } from "react";
 import Button, { IButton } from "../Button/Button";
+import './styles.css';
 
 interface ICard extends AllHTMLAttributes<HTMLDivElement> {
   title: string;
@@ -21,26 +22,26 @@ export default function Card({
   buttonText = "Add to Cart",
 }: Readonly<ICard>) {
   return (
-    <div className="px-5 py-7 max-w-[17.5rem] rounded-[20px]">
+    <div className="card__container">
       <img
         src={src}
         alt={title}
         width={150}
         height={200}
-        className="w-full h-[18.75rem] rounded-xl"
+        className="card__img"
         {...imageProps}
       />
-      <div className="mt-3">
-        <strong className="font-semibold text-lg leading-6 text-gray-700">
+      <div className="">
+        <strong className="card__title">
           {title}
         </strong>
-        <p className="mt-1 text-gray-400 text-[13px] italic leading-[18px]">
+        <p className="card__author">
           by {author}
         </p>
       </div>
       <Button
         {...buttonProps}
-        className="flex gap-2 mt-5 w-full items-center justify-center"
+        className="card__button"
       >
         <Cart />
         {buttonText}
