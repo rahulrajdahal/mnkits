@@ -29,7 +29,13 @@ export default function Card({
 }: Readonly<ICard>) {
   return (
     <div className="card__container">
-      <span className="card__price">{price}</span>
+      <span className="card__price__container">
+        <p className="card__price">
+          <sup className="card__price__sign">$</sup>
+
+          {price}
+        </p>
+      </span>
       <img
         src={src}
         alt={title}

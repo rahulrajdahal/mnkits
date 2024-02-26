@@ -36,7 +36,7 @@
   height: 18.75rem;
   border-radius: 0.75rem;
 }
-.card__price {
+.card__price__container {
   position: absolute;
   height: 60px;
   width: 60px;
@@ -49,5 +49,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: rotate(-30deg);
+  padding: 3px;
+}
+.card__price {
+  transform: rotate(-38deg);
+  line-height: 32px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.card__price__sign {
+  font-size: 14px;
+  line-height: 20px;
 }
