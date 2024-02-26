@@ -1,16 +1,21 @@
 import { Cart } from "meistericons-react";
 
-import { AllHTMLAttributes, ImgHTMLAttributes } from "react";
-import Button, { IButton } from "../Button/Button";
-import './styles.css';
+import {
+    AllHTMLAttributes,
+    ButtonHTMLAttributes,
+    ImgHTMLAttributes,
+} from "react";
+import Button from "../Button/Button";
+import "./styles.css";
 
 interface ICard extends AllHTMLAttributes<HTMLDivElement> {
   title: string;
   author: string;
   src: string;
   imageProps?: ImgHTMLAttributes<HTMLImageElement>;
-  buttonProps?: IButton;
+  buttonProps?: ButtonHTMLAttributes<HTMLButtonElement>;
   buttonText?: string;
+  price?: number;
 }
 
 export default function Card({
@@ -20,9 +25,11 @@ export default function Card({
   imageProps,
   buttonProps,
   buttonText = "Add to Cart",
+  price = 5.99,
 }: Readonly<ICard>) {
   return (
     <div className="card__container">
+      <span className="card__price">{price}</span>
       <img
         src={src}
         alt={title}
@@ -32,17 +39,10 @@ export default function Card({
         {...imageProps}
       />
       <div className="">
-        <strong className="card__title">
-          {title}
-        </strong>
-        <p className="card__author">
-          by {author}
-        </p>
+        <strong className="card__title">{title}</strong>
+        <p className="card__author">by {author}</p>
       </div>
-      <Button
-        {...buttonProps}
-        className="card__button"
-      >
+      <Button {...buttonProps} className="card__button">
         <Cart />
         {buttonText}
       </Button>
