@@ -1,5 +1,5 @@
-import { Input } from "..";
+import { Card } from "..";
 
 export default function App() {
-  return <Input label="Email" error="Erro this is reuired"/>;
+  return <Card />;
 }
