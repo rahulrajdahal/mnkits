@@ -12,6 +12,9 @@
   "bugs": {
     "url": "https://github.com/rahulrajdahal/mnkits/issues"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "keywords": [
     "mn-kits",
     "mnkits",
