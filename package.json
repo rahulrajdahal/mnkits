@@ -13,7 +13,7 @@
     "url": "https://github.com/rahulrajdahal/mnkits/issues"
   },
   "publishConfig": {
-    "@rahulrajdahal:registry": "https://github.com/rahulrajdahal/mnkits"
+    "registry": "https://registry.npmjs.org/"
   },
   "keywords": [
     "mn-kits",
