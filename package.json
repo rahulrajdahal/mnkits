@@ -35,7 +35,10 @@
     "dev": "vite",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "build": "tsc --p ./tsconfig-build.json && vite build"
+    "build": "tsc --p ./tsconfig-build.json && vite build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "sideEffects": [
     "**/*.css"
@@ -59,7 +62,8 @@
     "typescript": "^5.2.2",
     "vite": "^5.1.4",
     "vite-plugin-dts": "^3.7.3",
-    "vite-plugin-lib-inject-css": "^2.0.0"
+    "vite-plugin-lib-inject-css": "^2.0.0",
+    "vitepress": "^1.0.0-rc.44"
   },
   "dependencies": {
     "meistericons-react": "^1.0.17"
