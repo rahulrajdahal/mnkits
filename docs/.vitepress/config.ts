@@ -13,18 +13,23 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: 'Get Started',
+        link: '/docs'
+      }
+      , {
         text: 'Mn kits',
         items: [
-          { text: 'Overview', link: '/overview' },
-          { text: 'Why Mn Kits?', link: '/why-mnkits' },
-          { text: 'Installation', link: '/installation' }
+          { text: 'Overview', link: '/docs/overview' },
+          { text: 'Why Mn Kits?', link: '/docs/why-mnkits' },
+          { text: 'Installation', link: '/docs/installation' }
         ]
       },
       {
         text: 'Components',
         items: [
-          { text: 'Button', link: '/button' },
-          { text: 'Input', link: '/input' }
+          { text: 'Button', link: '/components/button' },
+          { text: 'Input', link: '/components/input' },
+          { text: 'Card', link: '/components/card' },
         ]
       },
 
