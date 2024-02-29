@@ -12,7 +12,7 @@ hero:
       link: /docs
     - theme: alt
       text: Components
-      link: /components
+      link: /components/Button
 
 features:
   - title: Easy to use.
